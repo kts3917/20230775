@@ -1,0 +1,12 @@
+h1{
+    font-size: 30px;
+    font-style: italic;
+    background-color: darkgray;
+}
+p, li{
+    background-color: #f5f5dc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul{
+    font-weight: bold;
+}
