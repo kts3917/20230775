@@ -21,18 +21,18 @@
             float: right;
             width: 332px;
             height: 428px;
+            margin-left: 8px;
             background-color: blue;
+        }
+        li{
+            list-style-type: none;
         }
         ul.gnb{
             float: left;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            padding-left: 0px;
-            padding-right: 0px;
+            padding: 8px 0;
             background-color: green;
         }
         ul.gnb > li{
-            list-style-type: none;
             float: left;
             padding-left: 16px;
 
@@ -42,14 +42,12 @@
         }
         .rank{
             float: right;
-            padding-bottom: 8px;
-            padding-top: 8px;
+            padding: 8px 0;
             background-color: yellow;
-            padding-left: 0px;
             
         }
-        .rank > li{
-            list-style-type: none;
+        .main-row{
+            display: flex;
         }
         .footer{
             height: 80px;
@@ -60,6 +58,9 @@
 <body>
         <div class="container">
         <h1>Logo</h1>
+        </div>
+
+        <div class="container">
        <ul class="gnb">
             <li>카페</li>
             <li>블로그</li>
@@ -70,19 +71,24 @@
             <li>부동산</li>
             <li>지도</li>
         </ul>
-
         <ul class="rank">
             <li>실시간 검색 순위</li>
         </ul>
+        </div>
 
+        <div class="container main-row">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="container main-row">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
 
-        <div class="left"></div>
-        <div class="right"></div>
+        <div class="container">
+            <div class="footer"></div>
+        </div>
 
-
-
-
-    </div>
     
 </body>
 </html>
