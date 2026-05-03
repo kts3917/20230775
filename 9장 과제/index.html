@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function convert() {
+            let cm = document.getElementById('cm').value;
+            
+            let totalinch = cm / 2.54;
+            let feet = Math.floor(totalinch / 12);
+
+            let inch = totalinch % 12;
+            
+
+            document.getElementById('result').innerText = feet + "피트, " + inch.toFixed(2) + " 인치입니다.";
+        }
+        function calculate() {
+            let r = document.getElementById('rInput').value;
+            let h = document.getElementById('hInput').value;
+            let vol = r * r * 3.141592 * h ;
+            document.getElementById('vResult').innerText = "부피 : " + vol.toFixed(2)
+        }
+        function division() {
+            let input = prompt("네 자리 정수를 입력해주세요.", "입력");
+            if(input){
+                let num = parseInt(input);
+                let thousand = parseInt(num / 1000);
+                let hundred = parseInt((num % 1000) / 100);
+                let ten = parseInt((num % 100) / 10);
+                let one = num % 10;
+
+                document.getElementById('sResult').innerText = thousand + " | " + hundred + " | " + ten + " | " + one;
+            }
+        }
+    </script>
+    <style>
+        div{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <section>
+        <h2>센티미터 변환</h2>
+        <input type="number" id="cm">
+        <button onclick="convert()">변환</button>
+        <p id="result"></p>
+    </section>
+
+    <section>
+        <h2>원기둥 부피 계산</h2>
+        <input type="number" id="rInput">
+        <br>
+        <input type="number" id="hInput">
+        <button onclick="calculate()">계산</button>
+        <p id="vResult"></p>
+
+    </section>
+    <section>
+        <h2>네 자리수 분리</h2>
+        <button onclick="division()">값 입력하기</button>
+        <p id="sResult">결과 표시</p>
+    </section>
+
+</body>
+</html>
