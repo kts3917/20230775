@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 10 실습1</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1 id="title">처음 제목입니다.</h1>
+    <button id="changeButton">제목 바꾸기</button>
+
+    <script>
+        let title = document.getElementById('title');
+        let button = document.getElementById('changeButton');
+
+        button.onclick = function(){
+            title.textContent = "JavaScript로 제목을 바꿨습니다."
+        }
+    </script>
+    
+</body>
+</html>
+////
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 실습 2</title>
+</head>
+<body>
+    <h1 id="title">스타일 변경 예제</h1>
+    <button id="styleButton">스타일 바꾸기</button>
+
+    <script>
+        let h1 = document.getElementById('title');
+        let button = document.getElementById('styleButton');
+
+        button.onclick = function(){
+            h1.style.backgroundColor = 'blue';
+            h1.style.color = 'white';
+            h1.style.padding = '10px';
+        }
+
+    </script>
+    
+</body>
+</html>
+///
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 실습 3</title>
+</head>
+<body>
+    <h1>이미지 속성 변경</h1>
+    <img src="" alt="이미직 여기에 표시됩니다." id="imge">
+    <br>
+    <br>
+    <button id="imgeButton">이미지 보이기</button>
+
+    <script>
+        let img = document.getElementById
+    </script>
+</body>
+</html>
