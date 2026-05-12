@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 실습 2</title>
+</head>
+<body>
+    <h1 id="title">스타일 변경 예제</h1>
+    <button id="styleButton">스타일 바꾸기</button>
+
+    <script>
+        let title = document.getElementById('title');
+        let button = document.getElementById('styleButton');
+
+        button.onclick = function(){
+            title.style.backgroundColor = 'blue';
+            title.style.color = 'white';
+            title.style.padding = '10px';
+        }
+
+    </script>
+    
+</body>
+</html>
