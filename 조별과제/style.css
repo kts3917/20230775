@@ -1,0 +1,64 @@
+
+body{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-bottom: 20px;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    padding: 25px;
+    border-radius: 8px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.search, .student-add{
+    display: flex;
+    gap: 8px    ;
+    align-items: center;
+}
+input, select, button{
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button{
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.bt-del{
+    background-color: firebrick;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.student-box{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.student-box th, .student-box td{
+    border: 1px solid;
+    padding: 12px;
+    text-align: center;
+}
+.score{
+    width: 60px;
+    text-align: center;
+    padding: 4px;
+}
