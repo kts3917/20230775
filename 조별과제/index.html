@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 관리 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>학생 출석 및 성적 관리 시스템</h1>
+            <div class="top">
+        <div class="search">
+        <input type="text" placeholder="이름 또는 학번">
+        <select>
+            <option value="">정렬 기준 선택</option>
+            <option value="">학번 오름차순</option>
+            <option value="">이름 가나다순</option>
+            <option value="">성적 높은순</option>
+        </select>
+        </div>
+
+            <div class="student-add">
+            <input type="text" placeholder="학번 입력">
+            <input type="text" placeholder="이름 입력">
+            <input type="text" placeholder="성적 입력">
+            <input type="text" placeholder="학과 입력">
+            <button>학생 추가</button>
+            </div>
+        </div>
+    
+
+    <table class="student-box">
+        <thead>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>성적 수정</th>
+                <th>관리</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="student_num">20230775</td>
+                <td class="name">김태성</td>
+                <td>
+                    <input type="number" class="score" value="A">점
+                </td>
+                <td>
+                    <button class="bt-del">삭제</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+</html>
